@@ -1,4 +1,5 @@
 using Catolog.API.Data;
+using Catolog.API.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +13,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 //Register Serices
 builder.Services.AddScoped<ICatalogContext, CatalogContext>();
-builder.Services.AddScoped<ICatalogContext, CatalogContext>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 var app = builder.Build();
 

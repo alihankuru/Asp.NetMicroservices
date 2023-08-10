@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  catolog.api:
+    image: ${DOCKER_REGISTRY-}catologapi
+    build:
+      context: .
+      dockerfile: Services\Catolog\Catolog.API\Dockerfile
