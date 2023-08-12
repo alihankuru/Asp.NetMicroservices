@@ -1,8 +1,12 @@
 version: '3.4'
 
 services:
+    
+  catologdb:
+    image: mongo
+
   catolog.api:
     image: ${DOCKER_REGISTRY-}catologapi
     build:
       context: .
-      dockerfile: Services\Catolog\Catolog.API\Dockerfile
+      dockerfile: Services/Catolog/Catolog.API/Dockerfile

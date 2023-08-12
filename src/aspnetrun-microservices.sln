@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catolog", "Catolog", "{0C49
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catolog.API", "Services\Catolog\Catolog.API\Catolog.API.csproj", "{C9E3BD8A-8D98-4629-9CEC-456E6148C19C}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9D9C6C34-DD16-4602-AFA1-BC63CF42651C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{C9E3BD8A-8D98-4629-9CEC-456E6148C19C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9E3BD8A-8D98-4629-9CEC-456E6148C19C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9E3BD8A-8D98-4629-9CEC-456E6148C19C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D9C6C34-DD16-4602-AFA1-BC63CF42651C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D9C6C34-DD16-4602-AFA1-BC63CF42651C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D9C6C34-DD16-4602-AFA1-BC63CF42651C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D9C6C34-DD16-4602-AFA1-BC63CF42651C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
