@@ -1,8 +1,19 @@
 version: '3.4'
 
 services:
+  catologdb:
+    container_name: catologdb
+    restart: always
+    ports:
+        - "27017:27017"
+    volumes:
+        - mongo_data:/data/db 
   catolog.api:
+    container_name: catolog.api
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+      - "DatabaseSettings:ConnectionString=mongodb://catologdb:27017" 
+    depends_on:
+      - catologdb
     ports:
-      - "80"
+      - "8000:80"

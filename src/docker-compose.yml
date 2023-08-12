@@ -10,3 +10,6 @@ services:
     build:
       context: .
       dockerfile: Services/Catolog/Catolog.API/Dockerfile
+
+volumes:
+  mongo_data:
