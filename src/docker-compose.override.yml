@@ -12,7 +12,7 @@ services:
     container_name: catolog.api
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - "DatabaseSettings:ConnectionString=mongodb://catologdb:27017" 
+      - "DatabaseSettings:ConnectionString=mongodb://catologdb:27017"
     depends_on:
       - catologdb
     ports:
